@@ -14,7 +14,7 @@ def scan_for_injection_markers(text: str) -> list[str]:
     phrasing. Never used to block a check — false positives on legitimate
     competitor copy would silently suppress real detections, and the LLM
     call itself has no tool access regardless, so this exists purely for
-    visibility (surfaced in the audit trail once it exists, Phase 7).
+    visibility.
     """
 
     return [m.group(0) for pattern in _MARKERS if (m := pattern.search(text))]

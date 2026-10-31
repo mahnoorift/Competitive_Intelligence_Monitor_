@@ -5,11 +5,7 @@ from app.base import Base
 
 
 class WorkspaceBudget(Base):
-    """Per-workspace LLM spend cap. Populated now (Phase 3) alongside usage
-    logging so nothing needs retrofitting later, but not yet enforced —
-    enforcement (rejecting calls once a workspace exceeds its cap) is
-    Phase 12's job.
-    """
+    """Per-workspace LLM spend cap, recorded alongside usage logging."""
 
     __tablename__ = "workspace_budgets"
 

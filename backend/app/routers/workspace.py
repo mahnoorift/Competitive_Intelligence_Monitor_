@@ -141,8 +141,7 @@ def invite_member(
         .first()
     )
 
-    # TODO(delivery): once an email connector exists (Phase 9), support
-    # inviting an email with no existing account via a pending-invite record.
+    # Inviting an email with no existing account is not supported yet.
     if user is None:
         raise HTTPException(
             status_code=404,

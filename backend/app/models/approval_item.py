@@ -19,7 +19,7 @@ class ApprovalStatus(str, enum.Enum):
 
 class ApprovalItem(Base):
     """One unified queue across every kind of thing that needs a human
-    sign-off (briefings now, battlecard updates from Phase 8) — the
+    sign-off (briefings, battlecard updates) — the
     approval-queue UI is a single list keyed off `item_type` rather than a
     UNION query across separate approval tables per content type.
     """

@@ -33,8 +33,8 @@ def decide(
     notes: str | None = None,
 ) -> ApprovalItem:
     """The only place an ApprovalItem's status is allowed to change from
-    'pending' — every draft (briefing now, battlecard update from Phase 8)
-    routes through here, and delivery (Phase 9) only ever fires from the
+    'pending' — every draft (briefing, battlecard update)
+    routes through here, and delivery only ever fires from the
     approval branch below. No other code path may deliver anything.
     """
 
