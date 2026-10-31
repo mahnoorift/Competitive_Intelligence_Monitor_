@@ -8,3 +8,7 @@ Thumbs.db
 # root-level dev orchestration (concurrently)
 node_modules/
 *.log
+
+# AI assistant instruction files, kept locally only
+AGENTS.md
+CLAUDE.md

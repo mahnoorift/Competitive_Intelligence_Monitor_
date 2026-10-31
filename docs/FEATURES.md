@@ -1,9 +1,8 @@
-# Features Added — Benchmarking, Site Summaries, Traffic, Category Pricing
+# Features — Benchmarking, Site Summaries, Traffic, Category Pricing
 
-This document covers the features built on top of the base Competitive Intelligence
-Monitor (see `IMPLEMENTATION_PLAN.md` for the original phased build). Everything
-below was added in a later session and is live in production use against the real
-Churail workspace.
+This document describes the benchmarking and market-context features of the
+Competitive Intelligence Monitor. See the root `README.md` for the overall
+architecture.
 
 ## 1. Own-site benchmarking & competitor comparison
 
